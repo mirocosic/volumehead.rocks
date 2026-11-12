@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volumehead</title>
+  <meta name="description" content="Volumehead — loud music, played live.">
+  <meta property="og:title" content="Volumehead">
+  <meta property="og:description" content="Loud music, played live.">
+  <meta property="og:url" content="https://volumehead.rocks">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="meter" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <h1>Volumehead</h1>
+    <p class="tagline">Loud music, played live.</p>
+    <nav class="nav">
+      <a href="#listen">Listen</a>
+      <a href="#shows">Shows</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="listen" class="section">
+      <h2>Listen</h2>
+      <p class="muted">First recordings are on the way. Follow along to hear them first.</p>
+      <ul class="links">
+        <li><a href="#">Spotify</a></li>
+        <li><a href="#">Bandcamp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </section>
+
+    <section id="shows" class="section">
+      <h2>Shows</h2>
+      <ul class="shows">
+        <li class="shows-empty">No shows announced yet. Follow us to hear first.</li>
+        <!--
+        <li>
+          <span class="date">Sat 14 Dec</span>
+          <span class="venue">Venue name</span>
+          <span class="city">City</span>
+          <a class="tix" href="#">Tickets</a>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Volumehead is a new band. Who we are, what we sound like and where we're from goes here, in two or three short lines.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Booking, press and everything else:<br>
+        <a class="email" href="mailto:hello@volumehead.rocks">hello@volumehead.rocks</a></p>
+      <ul class="links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Volumehead</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
