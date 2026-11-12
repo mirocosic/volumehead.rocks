@@ -50,10 +50,18 @@ a:hover, a:focus-visible { color: var(--accent); }
   position: relative;
 }
 
+.hero .logo {
+  display: block;
+  width: min(78vw, 60vh, 520px);
+  height: auto;
+  /* drops the logo's black square so the meter shows through */
+  mix-blend-mode: lighten;
+}
+
 .tagline {
   color: var(--muted);
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  margin: 16px 0 40px;
+  margin: 0 0 40px;
   position: relative;
 }
 
